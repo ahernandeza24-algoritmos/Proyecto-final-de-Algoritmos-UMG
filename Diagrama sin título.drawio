@@ -1,0 +1,13 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="_O5i1_Zd6kBwMoGi_YAU">
+    <mxGraphModel dx="860" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="idsB0qh9mYS_sr_1aJ4C-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="Inicio&#xa;│&#xa;└──► Repetir indefinidamente:&#xa;      ├── Mostrar cabecera y opciones (1. Productos, 2. Inventarios*, 3. Ventas*, 4. Reportes*, 5. Salir)&#xa;      ├── Capturar entrada del usuario&#xa;      ├── ¿La entrada es numérica y está en el rango [1-5]?&#xa;      │     ├── SÍ: Evaluar opción y derivar al módulo correspondiente.&#xa;      │     └── NO: Mostrar &quot;Error: Opción inválida&quot;. Capturar excepción (Evitar caída).&#xa;      └── ¿Opción es 5?&#xa;            ├── SÍ: Mostrar mensaje de cierre y Finalizar Programa.&#xa;            └── NO: Continuar ciclo." vertex="1">
+          <mxGeometry height="200" width="560" x="50" y="20" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
