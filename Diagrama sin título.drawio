@@ -4,9 +4,11 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="idsB0qh9mYS_sr_1aJ4C-1" parent="1" style="text;whiteSpace=wrap;html=1;" value="Inicio&#xa;│&#xa;└──► Repetir indefinidamente:&#xa;      ├── Mostrar cabecera y opciones (1. Productos, 2. Inventarios*, 3. Ventas*, 4. Reportes*, 5. Salir)&#xa;      ├── Capturar entrada del usuario&#xa;      ├── ¿La entrada es numérica y está en el rango [1-5]?&#xa;      │     ├── SÍ: Evaluar opción y derivar al módulo correspondiente.&#xa;      │     └── NO: Mostrar &quot;Error: Opción inválida&quot;. Capturar excepción (Evitar caída).&#xa;      └── ¿Opción es 5?&#xa;            ├── SÍ: Mostrar mensaje de cierre y Finalizar Programa.&#xa;            └── NO: Continuar ciclo." vertex="1">
-          <mxGeometry height="200" width="560" x="50" y="20" as="geometry" />
-        </mxCell>
+        <UserObject label="Inicio&#xa;│&#xa;├── Solicitar Código de Producto&#xa;├── Leer &quot;productos.json&quot;&#xa;├── ¿El código ya existe en el archivo?&#xa;│     ├── SÍ: Mostrar &quot;Error: Código duplicado&quot; ──► Regresar al menú.&#xa;│     └── NO: Continuar&#xa;├── Solicitar Nombre y Categoría&#xa;├── Repetir para Precio de Venta:&#xa;│     └── Capturar valor ──► ¿Es menor a 0? ──► SÍ: Mostrar Error / NO: Continuar&#xa;├── Repetir para Cantidad Disponible y Stock Mínimo (Validar &amp;gt;= 0)&#xa;├── Serializar diccionario del producto con &quot;activo&quot;: True&#xa;└── Guardar en &quot;productos.json&quot; ──► Mostrar &quot;Registro Exitoso&quot; ──► Fin" link="Inicio&#xa;│&#xa;├── Solicitar Código de Producto&#xa;├── Leer &quot;productos.json&quot;&#xa;├── ¿El código ya existe en el archivo?&#xa;│     ├── SÍ: Mostrar &quot;Error: Código duplicado&quot; ──► Regresar al menú.&#xa;│     └── NO: Continuar&#xa;├── Solicitar Nombre y Categoría&#xa;├── Repetir para Precio de Venta:&#xa;│     └── Capturar valor ──► ¿Es menor a 0? ──► SÍ: Mostrar Error / NO: Continuar&#xa;├── Repetir para Cantidad Disponible y Stock Mínimo (Validar &amp;gt;= 0)&#xa;├── Serializar diccionario del producto con &quot;activo&quot;: True&#xa;└── Guardar en &quot;productos.json&quot; ──► Mostrar &quot;Registro Exitoso&quot; ──► Fin" id="xW_MnpyFXyaUm9xDgZaV-1">
+          <mxCell parent="1" style="text;whiteSpace=wrap;html=1;" vertex="1">
+            <mxGeometry height="210" width="480" x="210" y="120" as="geometry" />
+          </mxCell>
+        </UserObject>
       </root>
     </mxGraphModel>
   </diagram>
